@@ -28,72 +28,68 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="ANGEL HAS FALLEN" />
 
-    <TableLayout
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/text_detail_movies_tvshows_genre_label"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_detail_movies_tvshows_title"
+        app:layout_constraintStart_toEndOf="@id/image_detail_movies_tvshows_poster"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/item_recycler_fragment_movies_text_genre" />
+
+    <TextView
+        android:id="@+id/text_detail_movies_tvshows_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_detail_movies_tvshows_title"
         app:layout_constraintStart_toEndOf="@id/image_detail_movies_tvshows_poster"
-        app:layout_constraintTop_toBottomOf="@id/text_detail_movies_tvshows_title">
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorAccent"
+        tools:text="Action" />
 
-        <TableRow>
+    <TextView
+        android:id="@+id/text_detail_movies_tvshows_duration_runtime_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_detail_movies_tvshows_genre_label"
+        app:layout_constraintStart_toEndOf="@id/image_detail_movies_tvshows_poster"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        tools:text="@string/item_recycler_fragment_movies_text_duration" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/item_recycler_fragment_movies_text_genre" />
+    <TextView
+        android:id="@+id/text_detail_movies_tvshows_duration_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_detail_movies_tvshows_genre"
+        app:layout_constraintStart_toEndOf="@id/image_detail_movies_tvshows_poster"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorAccent"
+        tools:text="2h 1m" />
 
-            <TextView
-                android:id="@+id/text_detail_movies_tvshows_genre"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:textColor="@color/colorAccent"
-                tools:text="Action" />
+    <TextView
+        android:id="@+id/text_detail_movies_tvshows_rating_network_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_detail_movies_tvshows_duration_runtime_label"
+        app:layout_constraintStart_toEndOf="@id/image_detail_movies_tvshows_poster"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        tools:text="@string/item_recycler_fragment_movies_text_rating" />
 
-        </TableRow>
-
-        <TableRow android:layout_marginTop="4dp">
-
-            <TextView
-                android:id="@+id/text_detail_movies_tvshows_duration_runtime_label"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:text="@string/item_recycler_fragment_movies_text_duration" />
-
-            <TextView
-                android:id="@+id/text_detail_movies_tvshows_duration_runtime"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:textColor="@color/colorAccent"
-                tools:text="2h 1m" />
-
-        </TableRow>
-
-        <TableRow android:layout_marginTop="4dp">
-
-            <TextView
-                android:id="@+id/text_detail_movies_tvshows_rating_network_label"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:text="@string/item_recycler_fragment_movies_text_rating" />
-
-            <TextView
-                android:id="@+id/text_detail_movies_tvshows_rating_network"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:textColor="@color/colorAccent"
-                tools:text="R" />
-
-        </TableRow>
-
-    </TableLayout>
+    <TextView
+        android:id="@+id/text_detail_movies_tvshows_rating_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_detail_movies_tvshows_duration_runtime"
+        app:layout_constraintStart_toEndOf="@id/image_detail_movies_tvshows_poster"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorAccent"
+        tools:text="R" />
 
     <TextView
         android:id="@+id/text_detail_movies_tvshows_rating_score"

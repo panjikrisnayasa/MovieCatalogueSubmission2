@@ -26,4 +26,8 @@
     <string name="detail_movies_tvshows_toast_buy_ticket">You ordered \"%s\" ticket</string>
     <string name="detail_movies_tvshows_toast_watch_now">Enjoy watching :)</string>
 
+    <!--    View Pager Adapter-->
+    <string name="view_pager_adapter_movies">Movies</string>
+    <string name="view_pager_adapter_tv_shows">TV Shows</string>
+
 </resources>

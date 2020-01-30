@@ -1,8 +1,11 @@
 package com.panjikrisnayasa.moviecataloguesubmission2
 
+import android.content.Context
 import android.content.Intent
+import android.content.res.Resources
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        view_pager_main.adapter = ViewPagerAdapter(supportFragmentManager)
+        view_pager_main.adapter = ViewPagerAdapter(supportFragmentManager, applicationContext)
         tab_main.setupWithViewPager(view_pager_main)
     }
 

@@ -6,16 +6,16 @@
     <string name="menu_main_change_language">Ganti Bahasa</string>
 
     <!--    Item Recycler Fragment Movies-->
-    <string name="item_recycler_fragment_movies_text_genre">Genre</string>
+    <string name="item_recycler_fragment_movies_text_genre">Aliran</string>
     <string name="item_recycler_fragment_movies_text_duration">Durasi</string>
-    <string name="item_recycler_fragment_movies_text_rating">Rating</string>
+    <string name="item_recycler_fragment_movies_text_rating">Penilaian</string>
     <string name="item_recycler_fragment_movies_button_see_more">Lihat</string>
     <string name="item_recycler_image_poster">Poster</string>
 
     <!--    Item Recycler Fragment TV Shows-->
-    <string name="item_recycler_fragment_tvshows_text_genre">Genre</string>
-    <string name="item_recycler_fragment_tvshows_text_network">Network</string>
-    <string name="item_recycler_fragment_tvshows_text_runtime">Runtime</string>
+    <string name="item_recycler_fragment_tvshows_text_genre">Aliran</string>
+    <string name="item_recycler_fragment_tvshows_text_network">Jaringan</string>
+    <string name="item_recycler_fragment_tvshows_text_runtime">Waktu Berjalan</string>
     <string name="item_recycler_fragment_tvshows_button_see_more">Lihat</string>
 
     <!--    Detail Movies TV Shows-->
@@ -25,5 +25,9 @@
     <string name="detail_movies_tvshows_image_poster">Poster</string>
     <string name="detail_movies_tvshows_toast_buy_ticket">Anda telah memesan tiket \"%s\"</string>
     <string name="detail_movies_tvshows_toast_watch_now">Selamat menyaksikan :)</string>
+
+    <!--    View Pager Adapter-->
+    <string name="view_pager_adapter_movies">Film</string>
+    <string name="view_pager_adapter_tv_shows">Acara TV</string>
 
 </resources>
